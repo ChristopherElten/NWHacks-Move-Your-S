@@ -7,3 +7,21 @@
     postalCode:   test postal code bob
     description:   description bob
     title:   title bob
+- !!models.Item
+    id:      James@123@id
+    startDate:   123
+    endDate:   456
+    address:   test address James
+    city:   test city James
+    postalCode:   test postal code James
+    description:   description James
+    title:   title James
+- !!models.Item
+    id:      Nick@123@id
+    startDate:   123
+    endDate:   456
+    address:   test address Nick
+    city:   test city Nick
+    postalCode:   test postal code Nick
+    description:   description Nick
+    title:   title Nick

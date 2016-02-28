@@ -6,14 +6,23 @@ import play.db.jpa.*;
 import views.html.*;
 import models.Item;
 import play.data.Form;
-import java.util.List;
+import java.util.*;
+import play.libs.Yaml;
 
 import static play.libs.Json.*;
 
 public class Application extends Controller {
 
+    @Transactional
     public Result index() {
-        return ok(index.render());
+        Items[] items = ((List)Yaml.load("test-data.yml")).toArray();
+        for(int i = 0; i < items.length; i++){
+           JPA.em().persist(items[i]); 
+        }
+        // Yaml.load("test-data.yml");
+        // JPA.em().persist(item);
+        return ok("temp");
+        // return ok(index.render());
     }
 
     @Transactional
