@@ -1,0 +1,9 @@
+- !!models.Item
+    id:      bob@123@id
+    startDate:   123
+    endDate:   456
+    address:   test address bob
+    city:   test city bob 
+    postalCode:   test postal code bob
+    description:   description bob
+    title:   title bob
