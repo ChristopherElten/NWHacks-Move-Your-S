@@ -1,12 +1,17 @@
 @()
 
-@main("Welcome to Play") {
+@main("MoveUrAss") {
     <script type='text/javascript' src='@routes.Assets.at("javascripts/index.js")'></script>
 
     <ul id="items"></ul>
 
     <form method="POST" action="@routes.Application.addItem()">
-        <input type="text" name="title"/>
+        <input type="text" name="title" placeholder="name of item you are selling"/><br>
+		<input type="text" name="description" placeholder="description"/><br>
+		<input type="text" name="address" placeholder="address"/><br>
+		<input type="text" name="postalCode" placeholder="postal code"/><br>
+		<input type="text" name="startDate" placeholder="start selling date"/><br>
+		<input type="text" name="endDate" placeholder="end selling date"/><br>
         <button class="btn">Add Item</button>
     </form>
 }
